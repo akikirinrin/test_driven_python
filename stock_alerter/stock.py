@@ -26,7 +26,7 @@ class Stock:
     @property
     def price(self):
         try:
-            return self.history[-1].value
+            return self.history[-1].price
         except IndexError:
             return None
 
